@@ -18,6 +18,7 @@ Este repositório contém um projeto de um site de login utilizando HTML, CSS e 
 - Opção para alteração de dados de usuários.
 - Funcionalidade para remoção de usuários.
 
+
 ## Como Usar
 
 Para configurar e executar o projeto, siga os passos abaixo no Termux:
@@ -34,17 +35,21 @@ Para configurar e executar o projeto, siga os passos abaixo no Termux:
    ```bash
    pkg install python3
 
-4. iniciar script download projeto:
+4. entra na pasta script download
+   ```bash
+   cd TELA-LOGINZX
+   
+5. iniciar script download projeto:
    ```bash
    python3 download_PAINEL-LOGIN@SENTINELZXOFC.py
 
 - script vai perdi local onde você que o pasta do projeto você pode digitar `/sdcard` para enviar a pasta do arquivo armazenamento inicia
 
-5. entra na pasta projeto:
+6. entra na pasta do projeto:
    ```bash
-   cd PAINEL-LOGIN@SENTINELZXOFC
+   cd ~ && cd /sdcard/PAINEL-LOGIN@SENTINELZXOFC
 
-6. inicia site login no 8080:
+7. inicia site login no 8080:
    ```bash
    php -S localhost:8080
    
