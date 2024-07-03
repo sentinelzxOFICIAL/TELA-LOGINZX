@@ -1,7 +1,13 @@
-# dev: @sentinelzxofc 
+import os
+import time
+import subprocess
+import re
+
+# dev: @sentinelzxofc
+
 def zx_animation():
     os.system('clear')
-    print("\033[1;32verificado arena...\033[0m")
+    print("\033[1;32mverificado arena...\033[0m")
     time.sleep(1)
     print("\033[1;32mExecutando...\033[0m")
     time.sleep(1)
@@ -19,7 +25,6 @@ def zx_animation():
 
 print("\033[1;32mIniciando verificação do diretório...\033[0m")
 
-
 def verifica_diretorio(diretorio):
     while not os.path.isdir(diretorio):
         print("\033[1;31mO diretório '{}' não existe.\033[0m".format(diretorio))
@@ -27,15 +32,18 @@ def verifica_diretorio(diretorio):
         diretorio = input()
     return diretorio
 
+# Inicialize a variável 'diretorio'
+diretorio = input("\033[1;32mDigite o local da pasta onde deseja executar (exemplo: /sdcard/pasta):\033[0m\n")
 
+# Verifique o diretório
 diretorio = verifica_diretorio(diretorio)
-
 
 zx_animation()
 
 try:
     os.chdir(diretorio)
 except Exception as e:
+    print(f"\033[1;31mErro ao mudar para o diretório: {e}\033[0m")
     exit(1)
 
 subprocess.run(["pkg", "update", "-y"])
@@ -53,6 +61,7 @@ REAL_URL = re.search(r'(?<=href=")https://download[^"]*', output.stdout).group()
 subprocess.run(["aria2c", "-o", "PAINEL-LOGIN@SENTINELZXOFC.zip", REAL_URL])
 
 if not os.path.exists("PAINEL-LOGIN@SENTINELZXOFC.zip"):
+    print("\033[1;31mErro: Arquivo não baixado.\033[0m")
     exit(1)
 
 subprocess.run(["unzip", "-o", "PAINEL-LOGIN@SENTINELZXOFC.zip", "-d", "./"])
