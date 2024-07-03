@@ -28,7 +28,7 @@ Para configurar e executar o projeto, siga os passos abaixo no Termux:
 
 2. Clone o repositório:
    ```bash
-   git clone https://github.com/sentinelzxofc/PAINEL-LOGINZ
+   git clone https://github.com/sentinelzxOFICIAL/TELA-LOGINZX
 
 3. instalar pacote python3:
    ```bash
@@ -50,7 +50,7 @@ Para configurar e executar o projeto, siga os passos abaixo no Termux:
    
 ## doaçãos 
 
-```64adab64-1517-4775-a973-65a850223edf```
+```34d1e83c-c1e1-49ff-a996-17b80f581f46```
 
 ## Redes Sociais
 
